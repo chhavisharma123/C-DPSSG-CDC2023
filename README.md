@@ -10,4 +10,10 @@ Code of algorithm C-DPSSG is provided for logistic regression and AUC maximizati
 -> Saddle point solution files if interested in plotting the gap between the algorithm iterates and saddle point solution
 ### How to run the code?   
 
--> In terminal, run the command python filename.py
+-> Run the command python filename.py in terminal
+
+### Important links:
+
+-> Full paper: TBA
+
+-> Technical report: https://bit.ly/3KooEbc
