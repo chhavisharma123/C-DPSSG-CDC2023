@@ -1,19 +1,46 @@
-# C-DPSSG-CDC2023
-This repository contains the code of algorithm C-DPSSG introduced in "Switch and Conquer: Efficient Algorithms By Switching Stochastic Gradient Oracles For Decentralized Saddle Point Problems", Chhavi Sharma, Vishnu Narayanan, P. Balamurugan  
-
-Code of algorithm C-DPSSG is provided for logistic regression and AUC maximization problems.
+# Code for CDC 2023 paper: "Switch and Conquer: Efficient Algorithms By Switching Stochastic Gradient Oracles For Decentralized Saddle Point Problems", Chhavi Sharma, Vishnu Narayanan, P. Balamurugan
+This repository contains the codes used in CDC 2023 paper: "Switch and Conquer: Efficient Algorithms By Switching Stochastic Gradient Oracles For Decentralized Saddle Point Problems"
+### Full Paper
+[Switch and Conquer: Efficient Algorithms By Switching Stochastic Gradient Oracles For Decentralized Saddle Point Problems](https://arxiv.org/pdf/2309.00997.pdf)
+### Abstract
+We consider a class of non-smooth strongly convex strongly concave saddle point problems in a decentralized setting
+without a central server. To solve a consensus formulation of
+problems in this class, we develop an inexact primal dual hybrid
+gradient (inexact PDHG) procedure that allows generic gradient
+computation oracles to update the primal and dual variables.
+We first investigate the performance of inexact PDHG with
+stochastic variance reduction gradient (SVRG) oracle. Our
+numerical study uncovers a significant phenomenon of initial
+conservative progress of iterates of IPDHG with SVRG oracle.
+To tackle this, we develop a simple and effective switching idea,
+where a generalized stochastic gradient (GSG) computation
+oracle is employed to hasten the iterates’ progress to a saddle
+point solution during the initial phase of updates, followed by
+a switch to the SVRG oracle at an appropriate juncture. The
+proposed algorithm is named Decentralized Proximal Switching
+Stochastic Gradient method with Compression (C-DPSSG), and
+is proven to converge to an ϵ-accurate saddle point solution with
+linear rate. Apart from delivering highly accurate solutions,
+our study reveals that utilizing the best convergence phases
+of GSG and SVRG oracles makes C-DPSSG well suited for
+obtaining solutions of low/medium accuracy faster, useful for
+certain applications. Numerical experiments on two benchmark
+machine learning applications show C-DPSSG’s competitive
+performance which validates our theoretical findings.
+### Citation
+To be announced.
 ### Requirements to run the code:  
+-> Python version 3.7
 
--> Install packages mentioned in .py files       
+-> Packages: numpy, networkx, math, random, matplotlib       
 
--> Path or file of binary classification data                                                                                                                   
+-> Path or file of binary classification data
+
 -> Saddle point solution files if interested in plotting the gap between the algorithm iterates and saddle point solution
-### How to run the code?   
+### File Descriptions
+-> auc_maximization.ipynb inside AUC_maximization implements C-DPSSG algorithm for AUC maximization problem with a4a data set.
 
--> Run the command python filename.py in terminal
+-> logistic_regression.ipynb inside Logistic_regression implements C-DPSSG algorithm for Robust Logistic Regression with a4a data set.
 
-### Important links:
-
--> Full paper: TBA
-
--> Technical report: https://bit.ly/3KooEbc
+### For any query, reach out at
+chhavisharma@iitb.ac.in
