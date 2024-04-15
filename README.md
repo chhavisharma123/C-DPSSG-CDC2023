@@ -28,14 +28,16 @@ certain applications. Numerical experiments on two benchmark
 machine learning applications show C-DPSSG’s competitive
 performance which validates our theoretical findings.
 ### Citation
-@inproceedings{sharma2023switch,\
-  title={Switch and conquer: Efficient algorithms by switching stochastic gradient oracles for decentralized saddle point problems},\
-  author={Sharma, Chhavi and Narayanan, Vishnu and Balamurugan, P},\
-  booktitle={2023 62nd IEEE Conference on Decision and Control (CDC)},\
-  pages={1312--1319},\
-  year={2023},\
-  organization={IEEE}\
+```
+@inproceedings{sharma2023switch,
+  title={Switch and conquer: Efficient algorithms by switching stochastic gradient oracles for decentralized saddle point problems},
+  author={Sharma, Chhavi and Narayanan, Vishnu and Balamurugan, P},
+  booktitle={2023 62nd IEEE Conference on Decision and Control (CDC)},
+  pages={1312--1319},
+  year={2023},
+  organization={IEEE}
 }
+```
 ### Requirements to run the code:  
 -> Python version 3.7
 
